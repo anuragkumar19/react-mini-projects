@@ -1,2 +1,2 @@
 build:npm run heroku-postbuild
-web:npm server
+web:npm start
