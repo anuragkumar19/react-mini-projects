@@ -6,7 +6,7 @@
     "scripts": {
         "start": "npm run server",
         "client": "npm start --prefix client",
-        "server": "json-server --watch db.json --port $PORT --static ./client/build",
+        "server": "json-server --watch db.json --static ./client/build",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "data:import": "node seeder",
         "data:destroy": "node seeder -d",
