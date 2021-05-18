@@ -6,12 +6,12 @@
     "scripts": {
         "start": "npm run server",
         "client": "npm start --prefix client",
-        "server": "json-server --watch db.json --port 3001",
+        "server": "json-server --watch db.json --port $PORT --static ./client/build",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "data:import": "node seeder",
         "data:destroy": "node seeder -d",
-        "heroku-postbuild": "cd client && npm install && npm run build && mv build/* ../public/ && cd ..",
-        "local-postbuild": "cd client && npm run build && mv build/* ../public/ && cd .."
+        "heroku-postbuild": "cd client && npm install && npm run build && cd ..",
+        "local-postbuild": "cd client && npm run build && cd .."
     },
     "author": "Anurag Kumar",
     "license": "MIT",
