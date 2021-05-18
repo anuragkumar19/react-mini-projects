@@ -4,7 +4,7 @@
     "description": "Todo App - JSON Server",
     "main": "index.js",
     "scripts": {
-        "start": "npm run server",
+        "start": "json-server --watch db.json --port $PORT",
         "client": "npm start --prefix client",
         "server": "json-server --watch db.json --port 3001",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
