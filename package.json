@@ -2,7 +2,7 @@
     "name": "todo_app",
     "version": "1.0.0",
     "description": "Todo App - JSON Server",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
         "start": "nodemon server",
         "client": "npm start --prefix client",
