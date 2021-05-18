@@ -4,7 +4,7 @@
     "description": "Todo App - JSON Server",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon server",
+        "start": "node server",
         "client": "npm start --prefix client",
         "server": "nodemon server",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
